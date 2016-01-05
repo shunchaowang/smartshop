@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		366DF0B31C3C4B8100F34AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366DF0B21C3C4B8100F34AC0 /* AppDelegate.swift */; };
+		366DF0B51C3C4B8100F34AC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366DF0B41C3C4B8100F34AC0 /* ViewController.swift */; };
+		366DF0B81C3C4B8100F34AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366DF0B61C3C4B8100F34AC0 /* Main.storyboard */; };
+		366DF0BA1C3C4B8100F34AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366DF0B91C3C4B8100F34AC0 /* Assets.xcassets */; };
+		366DF0BD1C3C4B8100F34AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366DF0BB1C3C4B8100F34AC0 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		366DF0AF1C3C4B8100F34AC0 /* Smartshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smartshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		366DF0B21C3C4B8100F34AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		366DF0B41C3C4B8100F34AC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		366DF0B71C3C4B8100F34AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		366DF0B91C3C4B8100F34AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		366DF0BC1C3C4B8100F34AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		366DF0BE1C3C4B8100F34AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		366DF0AC1C3C4B8100F34AC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		366DF0A61C3C4B8100F34AC0 = {
+			isa = PBXGroup;
+			children = (
+				366DF0B11C3C4B8100F34AC0 /* Smartshop */,
+				366DF0B01C3C4B8100F34AC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		366DF0B01C3C4B8100F34AC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				366DF0AF1C3C4B8100F34AC0 /* Smartshop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		366DF0B11C3C4B8100F34AC0 /* Smartshop */ = {
+			isa = PBXGroup;
+			children = (
+				366DF0B21C3C4B8100F34AC0 /* AppDelegate.swift */,
+				366DF0B41C3C4B8100F34AC0 /* ViewController.swift */,
+				366DF0B61C3C4B8100F34AC0 /* Main.storyboard */,
+				366DF0B91C3C4B8100F34AC0 /* Assets.xcassets */,
+				366DF0BB1C3C4B8100F34AC0 /* LaunchScreen.storyboard */,
+				366DF0BE1C3C4B8100F34AC0 /* Info.plist */,
+			);
+			path = Smartshop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		366DF0AE1C3C4B8100F34AC0 /* Smartshop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 366DF0C11C3C4B8100F34AC0 /* Build configuration list for PBXNativeTarget "Smartshop" */;
+			buildPhases = (
+				366DF0AB1C3C4B8100F34AC0 /* Sources */,
+				366DF0AC1C3C4B8100F34AC0 /* Frameworks */,
+				366DF0AD1C3C4B8100F34AC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Smartshop;
+			productName = Smartshop;
+			productReference = 366DF0AF1C3C4B8100F34AC0 /* Smartshop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		366DF0A71C3C4B8100F34AC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = swang;
+				TargetAttributes = {
+					366DF0AE1C3C4B8100F34AC0 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 366DF0AA1C3C4B8100F34AC0 /* Build configuration list for PBXProject "Smartshop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 366DF0A61C3C4B8100F34AC0;
+			productRefGroup = 366DF0B01C3C4B8100F34AC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				366DF0AE1C3C4B8100F34AC0 /* Smartshop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		366DF0AD1C3C4B8100F34AC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				366DF0BD1C3C4B8100F34AC0 /* LaunchScreen.storyboard in Resources */,
+				366DF0BA1C3C4B8100F34AC0 /* Assets.xcassets in Resources */,
+				366DF0B81C3C4B8100F34AC0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		366DF0AB1C3C4B8100F34AC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				366DF0B51C3C4B8100F34AC0 /* ViewController.swift in Sources */,
+				366DF0B31C3C4B8100F34AC0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		366DF0B61C3C4B8100F34AC0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				366DF0B71C3C4B8100F34AC0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		366DF0BB1C3C4B8100F34AC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				366DF0BC1C3C4B8100F34AC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		366DF0BF1C3C4B8100F34AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		366DF0C01C3C4B8100F34AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		366DF0C21C3C4B8100F34AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Smartshop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swang.Smartshop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		366DF0C31C3C4B8100F34AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Smartshop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swang.Smartshop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		366DF0AA1C3C4B8100F34AC0 /* Build configuration list for PBXProject "Smartshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				366DF0BF1C3C4B8100F34AC0 /* Debug */,
+				366DF0C01C3C4B8100F34AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		366DF0C11C3C4B8100F34AC0 /* Build configuration list for PBXNativeTarget "Smartshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				366DF0C21C3C4B8100F34AC0 /* Debug */,
+				366DF0C31C3C4B8100F34AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 366DF0A71C3C4B8100F34AC0 /* Project object */;
+}
