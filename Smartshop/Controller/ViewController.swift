@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let httpUtil = SWHttpUtil()
 
     override func viewDidLoad() {
         super.viewDidLoad()
