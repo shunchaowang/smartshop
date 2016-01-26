@@ -135,7 +135,7 @@ class SWHttpUtil: NSObject, NSURLSessionDelegate, NSURLSessionTaskDelegate {
     
     // http get to return json array
     func get(url: String, headers: Dictionary<String, String>?=nil, params: Dictionary<String, String>?=nil, arrayResponseHandler: (results: [NSDictionary]?, error: String?) -> Void) {
-        
+       
         // create request
 
         let request = NSMutableURLRequest(URL: NSURL(string: url)!)
