@@ -7,37 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		366DF0B81C3C4B8100F34AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366DF0B61C3C4B8100F34AC0 /* Main.storyboard */; };
 		366DF0BA1C3C4B8100F34AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366DF0B91C3C4B8100F34AC0 /* Assets.xcassets */; };
-		366DF0BD1C3C4B8100F34AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366DF0BB1C3C4B8100F34AC0 /* LaunchScreen.storyboard */; };
 		366DF0DA1C3D520500F34AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366DF0D91C3D520500F34AC0 /* AppDelegate.swift */; };
-		367B57AD1C56AB3200EEFC02 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367B57AB1C56AB3200EEFC02 /* Cart.storyboard */; };
-		367B57B11C56AD0400EEFC02 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367B57AE1C56AD0400EEFC02 /* Product.storyboard */; };
-		367B57B21C56AD0400EEFC02 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367B57AF1C56AD0400EEFC02 /* Order.storyboard */; };
-		367B57B31C56AD0400EEFC02 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367B57B01C56AD0400EEFC02 /* Home.storyboard */; };
 		367B57B71C57C7BA00EEFC02 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367B57B61C57C7BA00EEFC02 /* CategoryTableViewController.swift */; };
 		367B57BD1C57CF5E00EEFC02 /* SWHttpUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367B57BC1C57CF5E00EEFC02 /* SWHttpUtil.swift */; };
 		367B57BF1C57CFB900EEFC02 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367B57BE1C57CFB900EEFC02 /* Constant.swift */; };
 		367B57C41C57D2A300EEFC02 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367B57C31C57D2A300EEFC02 /* Product.swift */; };
 		367B57C81C594D1300EEFC02 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367B57C71C594D1300EEFC02 /* ProductViewController.swift */; };
+		367B57D01C595F7800EEFC02 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367B57CC1C595F7800EEFC02 /* Cart.storyboard */; };
+		367B57D11C595F7800EEFC02 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367B57CD1C595F7800EEFC02 /* Home.storyboard */; };
+		367B57D21C595F7800EEFC02 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367B57CE1C595F7800EEFC02 /* Order.storyboard */; };
+		367B57D31C595F7800EEFC02 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367B57CF1C595F7800EEFC02 /* Product.storyboard */; };
+		367B57D61C595FD200EEFC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367B57D41C595FD200EEFC02 /* LaunchScreen.storyboard */; };
+		367B57D71C595FD200EEFC02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367B57D51C595FD200EEFC02 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		366DF0AF1C3C4B8100F34AC0 /* Smartshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smartshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		366DF0B71C3C4B8100F34AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		366DF0B91C3C4B8100F34AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		366DF0BC1C3C4B8100F34AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		366DF0BE1C3C4B8100F34AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		366DF0D91C3D520500F34AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		367B57AB1C56AB3200EEFC02 /* Cart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
-		367B57AE1C56AD0400EEFC02 /* Product.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
-		367B57AF1C56AD0400EEFC02 /* Order.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
-		367B57B01C56AD0400EEFC02 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		367B57B61C57C7BA00EEFC02 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		367B57BC1C57CF5E00EEFC02 /* SWHttpUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWHttpUtil.swift; sourceTree = "<group>"; };
 		367B57BE1C57CFB900EEFC02 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		367B57C31C57D2A300EEFC02 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		367B57C71C594D1300EEFC02 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		367B57CC1C595F7800EEFC02 /* Cart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
+		367B57CD1C595F7800EEFC02 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		367B57CE1C595F7800EEFC02 /* Order.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
+		367B57CF1C595F7800EEFC02 /* Product.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
+		367B57D41C595FD200EEFC02 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		367B57D51C595FD200EEFC02 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +54,7 @@
 		366DF0A61C3C4B8100F34AC0 = {
 			isa = PBXGroup;
 			children = (
+				367B57CB1C595F7800EEFC02 /* View */,
 				367B57C21C57D28F00EEFC02 /* Model */,
 				367B57BB1C57CF5E00EEFC02 /* Vendor */,
 				366DF0D21C3D498700F34AC0 /* General */,
@@ -100,12 +101,6 @@
 		366DF0D81C3D520500F34AC0 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				367B57AE1C56AD0400EEFC02 /* Product.storyboard */,
-				367B57AF1C56AD0400EEFC02 /* Order.storyboard */,
-				367B57B01C56AD0400EEFC02 /* Home.storyboard */,
-				367B57AB1C56AB3200EEFC02 /* Cart.storyboard */,
-				366DF0B61C3C4B8100F34AC0 /* Main.storyboard */,
-				366DF0BB1C3C4B8100F34AC0 /* LaunchScreen.storyboard */,
 				366DF0BE1C3C4B8100F34AC0 /* Info.plist */,
 				366DF0D91C3D520500F34AC0 /* AppDelegate.swift */,
 			);
@@ -127,6 +122,20 @@
 			);
 			name = Model;
 			path = Smartshop/Model;
+			sourceTree = "<group>";
+		};
+		367B57CB1C595F7800EEFC02 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				367B57D41C595FD200EEFC02 /* LaunchScreen.storyboard */,
+				367B57D51C595FD200EEFC02 /* Main.storyboard */,
+				367B57CC1C595F7800EEFC02 /* Cart.storyboard */,
+				367B57CD1C595F7800EEFC02 /* Home.storyboard */,
+				367B57CE1C595F7800EEFC02 /* Order.storyboard */,
+				367B57CF1C595F7800EEFC02 /* Product.storyboard */,
+			);
+			name = View;
+			path = Smartshop/View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,13 +196,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				367B57B31C56AD0400EEFC02 /* Home.storyboard in Resources */,
-				366DF0BD1C3C4B8100F34AC0 /* LaunchScreen.storyboard in Resources */,
-				367B57B11C56AD0400EEFC02 /* Product.storyboard in Resources */,
+				367B57D71C595FD200EEFC02 /* Main.storyboard in Resources */,
+				367B57D01C595F7800EEFC02 /* Cart.storyboard in Resources */,
+				367B57D11C595F7800EEFC02 /* Home.storyboard in Resources */,
+				367B57D31C595F7800EEFC02 /* Product.storyboard in Resources */,
+				367B57D61C595FD200EEFC02 /* LaunchScreen.storyboard in Resources */,
 				366DF0BA1C3C4B8100F34AC0 /* Assets.xcassets in Resources */,
-				366DF0B81C3C4B8100F34AC0 /* Main.storyboard in Resources */,
-				367B57AD1C56AB3200EEFC02 /* Cart.storyboard in Resources */,
-				367B57B21C56AD0400EEFC02 /* Order.storyboard in Resources */,
+				367B57D21C595F7800EEFC02 /* Order.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,27 +223,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		366DF0B61C3C4B8100F34AC0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				366DF0B71C3C4B8100F34AC0 /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		366DF0BB1C3C4B8100F34AC0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				366DF0BC1C3C4B8100F34AC0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		366DF0BF1C3C4B8100F34AC0 /* Debug */ = {
