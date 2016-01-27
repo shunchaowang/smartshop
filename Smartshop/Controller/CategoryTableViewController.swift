@@ -47,9 +47,9 @@ class CategoryTableViewController: UITableViewController, UIGestureRecognizerDel
         
         let category = categories[indexPath.row]
             
-        cell.categoryNameLabel.text = category.name
+        cell.categoryName = category.name
         cell.categoryId = category.id
-
+       
         // Configure the cell...
 
         return cell
@@ -104,6 +104,15 @@ class CategoryTableViewController: UITableViewController, UIGestureRecognizerDel
     // MARK: Set up table view controller
     private func setup() {
        
+        //add a margin of 0 to the top of the tableview
+        //TOP, LEFT, BOTTOM, RIGHT
+//        let inset = UIEdgeInsetsMake(0, 0, 0, 0)
+//        self.tableView.contentInset = inset
+        
+        // add a separator to table
+//        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
+//        self.tableView.separatorColor = UIColor.blueColor()
+        
         let httpUtil = SWHttpUtil()
         let requestUrl = "\(Constant.ServiceUrl)/\(Constant.AllCategoryRequest)"
         
@@ -152,8 +161,44 @@ class CategoryTableViewController: UITableViewController, UIGestureRecognizerDel
         if let indexPath = self.tableView.indexPathForRowAtPoint(location) {
             if let row = self.tableView.cellForRowAtIndexPath(indexPath) as? CategoryTableViewCell {
                 print("row selected: \(row.categoryId)")
+                performSegueWithIdentifier("CategoryTableToProductSegue", sender: row)
+            }
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "CategoryTableToProductSegue" {
+            if let category = sender as? CategoryTableViewCell, destination = segue.destinationViewController as? ProductViewController {
+                print("category: \(category)")
+                destination.categoryName = category.categoryName
+                destination.categoryId = category.categoryId
             }
         }
     }
    
 }
+
+class CategoryTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var categoryNameLabel: UILabel!
+    
+    var categoryId: Int = 0
+    var categoryName = "" {
+        didSet {
+            categoryNameLabel.text = categoryName
+        }
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+    
+    override func setSelected(selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
+    
+}
+
