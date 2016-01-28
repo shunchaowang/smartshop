@@ -13,3 +13,15 @@ struct Category {
     var name: String
     var image: String
 }
+
+struct Product {
+    var id: Int
+    var model: String
+    var quantity: Int
+    var image: String
+    var price: Double
+    var weight: Double
+    var name: String
+    var description: String
+    var categoryId: Int
+}

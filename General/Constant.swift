@@ -17,6 +17,14 @@ class Constant {
     }
     
     class var AllCategoryRequest: String {
-        return "allCategories"
+        return "category/query"
+    }
+    
+    class var ProductByCategoryRequest: String {
+        return "/category/products"
+    }
+    
+    class var PageLimit: Int {
+        return 20
     }
 }
