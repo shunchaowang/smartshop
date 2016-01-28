@@ -49,6 +49,7 @@ class CategoryTableViewController: UITableViewController, UIGestureRecognizerDel
             
         cell.categoryName = category.name
         cell.categoryId = category.id
+        cell.categoryImageUrl = category.image
        
         // Configure the cell...
 
@@ -121,7 +122,6 @@ class CategoryTableViewController: UITableViewController, UIGestureRecognizerDel
         
         httpUtil.get(requestUrl/*, headers: headers*/) {
             (results: [NSDictionary]?, error: String?) -> Void in
-            print("result: \(results)")
             if let unwrappedArray = results {
                 
                 var id = 0
@@ -160,7 +160,6 @@ class CategoryTableViewController: UITableViewController, UIGestureRecognizerDel
         let location = gestureRecognizer.locationInView(self.tableView)
         if let indexPath = self.tableView.indexPathForRowAtPoint(location) {
             if let row = self.tableView.cellForRowAtIndexPath(indexPath) as? CategoryTableViewCell {
-                print("row selected: \(row.categoryId)")
                 performSegueWithIdentifier("CategoryTableToProductSegue", sender: row)
             }
         }
@@ -169,7 +168,6 @@ class CategoryTableViewController: UITableViewController, UIGestureRecognizerDel
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "CategoryTableToProductSegue" {
             if let category = sender as? CategoryTableViewCell, destination = segue.destinationViewController as? ProductViewController {
-                print("category: \(category)")
                 destination.categoryName = category.categoryName
                 destination.categoryId = category.categoryId
             }
@@ -181,11 +179,21 @@ class CategoryTableViewController: UITableViewController, UIGestureRecognizerDel
 class CategoryTableViewCell: UITableViewCell {
     
     @IBOutlet weak var categoryNameLabel: UILabel!
+    @IBOutlet weak var categoryImage: UIImageView!
     
     var categoryId: Int = 0
     var categoryName = "" {
         didSet {
             categoryNameLabel.text = categoryName
+        }
+    }
+    var categoryImageUrl: String? {
+        didSet {
+            if let imageUrl = categoryImageUrl {
+                if let url = NSURL(string: "\(Constant.ZencartUrl)/\(imageUrl)"), data = NSData(contentsOfURL: url) {
+                    categoryImage.image = UIImage(data: data)
+                }
+            }
         }
     }
     

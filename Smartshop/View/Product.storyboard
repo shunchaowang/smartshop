@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -23,15 +24,35 @@
                                     <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ax-Fe-Qs6">
-                                            <rect key="frame" x="8" y="0.0" width="544" height="43"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ax-Fe-Qs6">
+                                            <rect key="frame" x="8" y="7" width="59" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5pq-CE-tlv">
+                                            <rect key="frame" x="497" y="8" width="47" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="5pq-CE-tlv" secondAttribute="height" multiplier="100:57" id="NXK-cO-DoN"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5pq-CE-tlv" firstAttribute="centerY" secondItem="k3P-Rj-Emn" secondAttribute="centerY" id="4xQ-Uv-2vK"/>
+                                        <constraint firstItem="5Ax-Fe-Qs6" firstAttribute="centerY" secondItem="k3P-Rj-Emn" secondAttribute="centerY" id="F5o-z1-ffG"/>
+                                        <constraint firstItem="5pq-CE-tlv" firstAttribute="baseline" secondItem="5Ax-Fe-Qs6" secondAttribute="baseline" id="Zu1-Cw-IWe"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="5Ax-Fe-Qs6" secondAttribute="leading" id="gpo-Hs-Nin"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="5pq-CE-tlv" secondAttribute="trailing" constant="8" id="pGy-Ep-Kwf"/>
+                                        <constraint firstItem="5pq-CE-tlv" firstAttribute="top" secondItem="k3P-Rj-Emn" secondAttribute="topMargin" id="sCy-EJ-Uw8"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Zu1-Cw-IWe"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="categoryImage" destination="5pq-CE-tlv" id="Ecs-lr-ePT"/>
                                     <outlet property="categoryNameLabel" destination="5Ax-Fe-Qs6" id="jg4-B7-m8x"/>
                                 </connections>
                             </tableViewCell>
@@ -48,7 +69,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZy-2a-r5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847" y="-108.5"/>
+            <point key="canvasLocation" x="847" y="-109"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="y2Z-BD-3XG">

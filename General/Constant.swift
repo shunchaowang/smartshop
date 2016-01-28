@@ -12,6 +12,10 @@ class Constant {
         return "https://localhost:7443"
     }
     
+    class var ZencartUrl: String {
+        return "http://localhost/zencart/images"
+    }
+    
     class var AllCategoryRequest: String {
         return "allCategories"
     }
