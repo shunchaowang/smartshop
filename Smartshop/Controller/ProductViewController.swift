@@ -47,7 +47,7 @@ class ProductViewController: UIViewController {
     
 }
 
-class ProductTableViewController: UITableViewController {
+class ProductTableViewController: UITableViewController, UIGestureRecognizerDelegate {
     
     var categoryId = 0
     private let productCellIdentifier = "ProductNameCell"
@@ -68,11 +68,12 @@ class ProductTableViewController: UITableViewController {
     private func setup() {
         
         let httpUtil = SWHttpUtil()
-        let requestUrl = "\(Constant.ServiceUrl)/\(Constant.ProductByCategoryRequest)"
+        let requestUrl = "\(Constant.ServiceUrl)/\(Constant.ProductByCategoryRequest)" +
+        "/?cid=\(categoryId)&limit=\(Constant.PageLimit)&offset=0"
         
         // TODO: add authorization header
         //let headers = ["Accept": "application/json", "Authorization": "Bearer jHsYiWWRZDq5Sq3N"]
-        let headers = ["Accept": "application/json", "limit": "\(Constant.PageLimit)", "offset": "0"]
+        let headers = ["Accept": "application/json"]
         
         httpUtil.get(requestUrl, headers: headers) {
             (results: [NSDictionary]?, error: String?) -> Void in
@@ -124,5 +125,9 @@ class ProductTableViewController: UITableViewController {
         
     }
 
+}
+
+class ProductTableViewCell: UITableViewCell {
     
 }
+
