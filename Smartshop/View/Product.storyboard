@@ -140,19 +140,55 @@
         <scene sceneID="dhI-wX-UxC">
             <objects>
                 <tableViewController id="Wo6-Yl-vN9" userLabel="Product Table View Controller" customClass="ProductTableViewController" customModule="Smartshop" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NH1-1X-0ic">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="121" sectionHeaderHeight="28" sectionFooterHeight="28" id="NH1-1X-0ic">
                         <rect key="frame" x="0.0" y="0.0" width="560" height="474"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductNameCell" id="F1N-A3-Xn4" customClass="ProductTableViewCell" customModule="Smartshop" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="560" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductNameCell" rowHeight="121" id="F1N-A3-Xn4" customClass="ProductTableViewCell" customModule="Smartshop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="560" height="121"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F1N-A3-Xn4" id="l8T-0c-Hl4">
-                                    <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2VJ-Kx-aTh" userLabel="Product Image">
+                                            <rect key="frame" x="8" y="8" width="100" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="2VJ-Kx-aTh" secondAttribute="height" multiplier="5:4" id="WIe-FF-Pg5"/>
+                                                <constraint firstAttribute="width" constant="100" id="r95-T2-ADa"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kJ6-e6-tH1" userLabel="Product Description">
+                                            <rect key="frame" x="140" y="-4" width="412" height="105"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aj8-XZ-ezT" userLabel="Product Name Label">
+                                                    <rect key="frame" x="8" y="8" width="396" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRV-5j-06Y">
+                                                    <rect key="frame" x="8" y="59" width="97" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="2VJ-Kx-aTh" secondAttribute="leading" id="ZdB-KJ-v1W"/>
+                                        <constraint firstItem="2VJ-Kx-aTh" firstAttribute="top" secondItem="l8T-0c-Hl4" secondAttribute="topMargin" id="eUu-d5-vvB"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="productImageView" destination="2VJ-Kx-aTh" id="x1S-gv-sEa"/>
+                                    <outlet property="productNameLabel" destination="Aj8-XZ-ezT" id="1xt-DR-ZbJ"/>
+                                    <outlet property="productPriceLabel" destination="YRV-5j-06Y" id="NhM-mn-3cA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -163,7 +199,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x9h-zb-7Nz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2110" y="-102.5"/>
+            <point key="canvasLocation" x="2110" y="-103"/>
         </scene>
         <!--Category View Controller-->
         <scene sceneID="KUM-2C-Idb">

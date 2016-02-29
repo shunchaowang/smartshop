@@ -122,12 +122,63 @@ class ProductTableViewController: UITableViewController, UIGestureRecognizerDele
             self.tableView.reloadData()
         }
 
-        
     }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return products.count
+    }
+    
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(productCellIdentifier, forIndexPath: indexPath) as! ProductTableViewCell
+        
+        let product = products[indexPath.row]
+        
+        cell.productName = product.name
+        cell.productId = product.id
+        cell.productImageUrl = product.image
+        
+        // Configure the cell...
+        
+        return cell
+    }
+
 
 }
 
 class ProductTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var productNameLabel: UILabel!
+    @IBOutlet weak var productPriceLabel: UILabel!
+    
+    var productId = 0
+    var productName = "" {
+        didSet {
+            productNameLabel.text = productName
+        }
+    }
+    
+    var productImageUrl: String? {
+        didSet {
+            if let imageUrl = productImageUrl {
+                if let url = NSURL(string: "\(Constant.ZencartUrl)/\(imageUrl)"), data = NSData(contentsOfURL: url) {
+                    productImageView.image = UIImage(data: data)
+                }
+            }
+        }
+    }
+    
+    var productPrice = 0.0 {
+        didSet {
+            productPriceLabel.text = "\(productPrice)"
+        }
+    }
     
 }
 
