@@ -106,6 +106,7 @@ class OrderTableViewController: UITableViewController {
     // MARK: Set up table view controller
     private func setup() {
         
+        //performSegueWithIdentifier("OrderToRegisterSegue", sender: nil)        
         //add a margin of 0 to the top of the tableview
         //TOP, LEFT, BOTTOM, RIGHT
         //        let inset = UIEdgeInsetsMake(0, 0, 0, 0)

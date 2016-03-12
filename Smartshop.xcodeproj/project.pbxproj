@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2829D38C1C8FCB600064A066 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2829D38B1C8FCB600064A066 /* LoginViewController.swift */; };
+		2829D3901C93B6A90064A066 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2829D38F1C93B6A90064A066 /* RegisterViewController.swift */; };
 		285A56831C8BCA3500F17B5C /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A56821C8BCA3500F17B5C /* OrderViewController.swift */; };
 		366DF0BA1C3C4B8100F34AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366DF0B91C3C4B8100F34AC0 /* Assets.xcassets */; };
 		366DF0DA1C3D520500F34AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366DF0D91C3D520500F34AC0 /* AppDelegate.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2829D38B1C8FCB600064A066 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2829D38F1C93B6A90064A066 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		285A56821C8BCA3500F17B5C /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		366DF0AF1C3C4B8100F34AC0 /* Smartshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smartshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366DF0B91C3C4B8100F34AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 				367B57B61C57C7BA00EEFC02 /* CategoryViewController.swift */,
 				367B57C71C594D1300EEFC02 /* ProductViewController.swift */,
 				285A56821C8BCA3500F17B5C /* OrderViewController.swift */,
+				2829D38B1C8FCB600064A066 /* LoginViewController.swift */,
+				2829D38F1C93B6A90064A066 /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2829D3901C93B6A90064A066 /* RegisterViewController.swift in Sources */,
 				367B57BD1C57CF5E00EEFC02 /* SWHttpUtil.swift in Sources */,
 				366DF0DA1C3D520500F34AC0 /* AppDelegate.swift in Sources */,
 				367B57C81C594D1300EEFC02 /* ProductViewController.swift in Sources */,
@@ -223,6 +230,7 @@
 				367B57B71C57C7BA00EEFC02 /* CategoryViewController.swift in Sources */,
 				367B57BF1C57CFB900EEFC02 /* Constant.swift in Sources */,
 				367B57C41C57D2A300EEFC02 /* Product.swift in Sources */,
+				2829D38C1C8FCB600064A066 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
